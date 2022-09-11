@@ -13,7 +13,7 @@ namespace Core.DataAccess.EntityFramework
         where TContext : DbContext,new()    
     {
 
-        //aşağıdaki yeri EfProductDaldan kestik aldık düzenledik
+        
         public void Add(TEntity entity)
         {
             using (TContext context = new TContext())
