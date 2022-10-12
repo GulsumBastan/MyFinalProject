@@ -45,6 +45,8 @@ namespace Business.Concrete
             _productDal.Add(product);
             return new SuccessResult(Messages.ProductAdded);                       
         }
+
+        //[CacheAspect] //key,value
         public IDataResult<List<Product>> GetAll()
         {
             if (DateTime.Now.Hour == 21)
